@@ -2058,7 +2058,17 @@ function injectConsentHTML(detectedCookies, language = 'en') {
     gap: 12px;
     margin-top: 8px;
 }
-
+#cookie-consent-container .cookie-btn {
+    padding: 12px 20px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+    text-align: center !important;
+    border: none !important;
+    flex: 1 !important;
+    letter-spacing: 0.2px !important;
+}
     .cookie-btn {
         padding: ${config.buttonStyle.padding};
         border-radius: ${config.buttonStyle.borderRadius};
