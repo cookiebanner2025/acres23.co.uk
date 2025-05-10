@@ -121,34 +121,45 @@ const config = {
     },
     
     // Button styling
-    buttonStyle: {
-        borderRadius: '8px',
-        padding: '12px 20px',
-        fontWeight: '600',
-        fontSize: '14px',
-        transition: 'all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)',
-        
-        accept: {
-            background: '#2ecc71',
-            color: '#ffffff',
-            border: '1px solid #2ecc71',
-            hover: {
-                background: '#27ae60',
-                color: '#ffffff',
-                transform: 'translateY(-1px)'
-            }
-        },
-        
-        reject: {
-            background: '#ffffff',
-            color: '#e74c3c',
-            border: '1px solid #e74c3c',
-            hover: {
-                background: '#ffeeed',
-                color: '#e74c3c',
-                transform: 'translateY(-1px)'
-            }
-        },
+   buttonStyle: {
+    borderRadius: '8px !important',
+    padding: '12px 20px !important',
+    fontWeight: '600 !important',
+    fontSize: '14px !important',
+    transition: 'all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important',
+    
+    accept: {
+        background: '#2ecc71 !important',
+        color: '#ffffff !important',
+        border: '1px solid #2ecc71 !important',
+        hover: {
+            background: '#27ae60 !important',
+            color: '#ffffff !important',
+            transform: 'translateY(-1px) !important'
+        }
+    },
+    
+    reject: {
+        background: '#ffffff !important',
+        color: '#e74c3c !important',
+        border: '1px solid #e74c3c !important',
+        hover: {
+            background: '#ffeeed !important',
+            color: '#e74c3c !important',
+            transform: 'translateY(-1px) !important'
+        }
+    },
+    
+    adjust: {
+        background: '#f8f9fa !important',
+        color: '#333333 !important',
+        border: '1px solid #e0e0e0 !important',
+        hover: {
+            background: '#f0f2f5 !important',
+            color: '#333333 !important',
+            transform: 'translateY(-1px) !important'
+        }
+    },
         
         adjust: {
             background: '#f8f9fa',
@@ -2058,8 +2069,69 @@ function injectConsentHTML(detectedCookies, language = 'en') {
     gap: 12px;
     margin-top: 8px;
 }
+#cookie-consent-container .cookie-btn {
+    padding: 12px 20px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+    text-align: center !important;
+    border: none !important;
+    flex: 1 !important;
+    letter-spacing: 0.2px !important;
+}
+    .cookie-btn {
+        padding: ${config.buttonStyle.padding};
+        border-radius: ${config.buttonStyle.borderRadius};
+        cursor: pointer;
+        font-weight: ${config.buttonStyle.fontWeight};
+        font-size: ${config.buttonStyle.fontSize};
+        transition: ${config.buttonStyle.transition};
+        text-align: center;
+        border: none;
+        flex: 1;
+        letter-spacing: 0.2px;
+    }
 
- .cookie-btn
+    .adjust-btn {
+        background-color: ${config.buttonStyle.adjust.background};
+        color: ${config.buttonStyle.adjust.color};
+        border: ${config.buttonStyle.adjust.border};
+    }
+
+    .adjust-btn:hover {
+        background-color: ${config.buttonStyle.adjust.hover.background};
+        color: ${config.buttonStyle.adjust.hover.color};
+        transform: ${config.buttonStyle.adjust.hover.transform};
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .reject-btn {
+        background-color: ${config.buttonStyle.reject.background};
+        color: ${config.buttonStyle.reject.color};
+        border: ${config.buttonStyle.reject.border};
+    }
+
+    .reject-btn:hover {
+        background-color: ${config.buttonStyle.reject.hover.background};
+        color: ${config.buttonStyle.reject.hover.color};
+        transform: ${config.buttonStyle.reject.hover.transform};
+        box-shadow: 0 2px 8px rgba(231, 76, 60, 0.15);
+    }
+
+    .accept-btn {
+        background-color: ${config.buttonStyle.accept.background};
+        color: ${config.buttonStyle.accept.color};
+        border: ${config.buttonStyle.accept.border};
+        box-shadow: 0 2px 12px rgba(46, 204, 113, 0.3);
+    }
+
+    .accept-btn:hover {
+        background-color: ${config.buttonStyle.accept.hover.background};
+        color: ${config.buttonStyle.accept.hover.color};
+        transform: ${config.buttonStyle.accept.hover.transform};
+        box-shadow: 0 4px 16px rgba(46, 204, 113, 0.4);
+    }
 
     .save-btn {
         background-color: ${config.buttonStyle.save.background};
