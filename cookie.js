@@ -2058,69 +2058,8 @@ function injectConsentHTML(detectedCookies, language = 'en') {
     gap: 12px;
     margin-top: 8px;
 }
-#cookie-consent-container .cookie-btn {
-    padding: 12px 20px !important;
-    border-radius: 8px !important;
-    font-weight: 600 !important;
-    font-size: 14px !important;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
-    text-align: center !important;
-    border: none !important;
-    flex: 1 !important;
-    letter-spacing: 0.2px !important;
-}
-    .cookie-btn {
-        padding: ${config.buttonStyle.padding};
-        border-radius: ${config.buttonStyle.borderRadius};
-        cursor: pointer;
-        font-weight: ${config.buttonStyle.fontWeight};
-        font-size: ${config.buttonStyle.fontSize};
-        transition: ${config.buttonStyle.transition};
-        text-align: center;
-        border: none;
-        flex: 1;
-        letter-spacing: 0.2px;
-    }
 
-    .adjust-btn {
-        background-color: ${config.buttonStyle.adjust.background};
-        color: ${config.buttonStyle.adjust.color};
-        border: ${config.buttonStyle.adjust.border};
-    }
-
-    .adjust-btn:hover {
-        background-color: ${config.buttonStyle.adjust.hover.background};
-        color: ${config.buttonStyle.adjust.hover.color};
-        transform: ${config.buttonStyle.adjust.hover.transform};
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    }
-
-    .reject-btn {
-        background-color: ${config.buttonStyle.reject.background};
-        color: ${config.buttonStyle.reject.color};
-        border: ${config.buttonStyle.reject.border};
-    }
-
-    .reject-btn:hover {
-        background-color: ${config.buttonStyle.reject.hover.background};
-        color: ${config.buttonStyle.reject.hover.color};
-        transform: ${config.buttonStyle.reject.hover.transform};
-        box-shadow: 0 2px 8px rgba(231, 76, 60, 0.15);
-    }
-
-    .accept-btn {
-        background-color: ${config.buttonStyle.accept.background};
-        color: ${config.buttonStyle.accept.color};
-        border: ${config.buttonStyle.accept.border};
-        box-shadow: 0 2px 12px rgba(46, 204, 113, 0.3);
-    }
-
-    .accept-btn:hover {
-        background-color: ${config.buttonStyle.accept.hover.background};
-        color: ${config.buttonStyle.accept.hover.color};
-        transform: ${config.buttonStyle.accept.hover.transform};
-        box-shadow: 0 4px 16px rgba(46, 204, 113, 0.4);
-    }
+ .cookie-btn
 
     .save-btn {
         background-color: ${config.buttonStyle.save.background};
