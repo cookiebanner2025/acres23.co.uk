@@ -1,13 +1,13 @@
 const config = {
     // Domain restriction
-    allowedDomains: ['dev-rpractice.pantheonsite.io', 'acres23.co.uk'],
+    allowedDomains: ['acres23.co.uk'],
     
     // Privacy policy URL (configurable)
     privacyPolicyUrl: 'https://yourdomain.com/privacy-policy', // Add your full privacy policy URL here
     
     // Microsoft UET Configuration
     uetConfig: {
-        enabled: true,
+        enabled: false,
         defaultTagId: '137027166', // Fallback if auto-detection fails
         autoDetectTagId: true,     // Try to detect UET tag ID automatically
         defaultConsent: 'denied',  // 'denied' or 'granted'
@@ -22,7 +22,7 @@ const config = {
         acceptOnScroll: false,
         acceptOnContinue: false,
         showFloatingButton: true,
-        showAdminButton: true,
+        showAdminButton: false,
         floatingButtonPosition: 'left',
         adminButtonPosition: 'left',
         bannerPosition: 'left',
@@ -62,7 +62,7 @@ const config = {
     languageConfig: {
         defaultLanguage: 'en',
         availableLanguages: [], // Only en and fr as requested
-        showLanguageSelector: true,
+        showLanguageSelector: false,
         autoDetectLanguage: true
     },
     
