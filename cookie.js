@@ -129,11 +129,11 @@ const config = {
     transition: 'all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important',
     
     accept: {
-        background: '#2ecc71 !important',
+        background: '#65684b !important',
         color: '#ffffff !important',
-        border: '1px solid #2ecc71 !important',
+        border: '1px solid #65684b !important',
         hover: {
-            background: '#27ae60 !important',
+            background: '#000000 !important',
             color: '#ffffff !important',
             transform: 'translateY(-1px) !important'
         }
@@ -141,22 +141,22 @@ const config = {
     
     reject: {
         background: '#ffffff !important',
-        color: '#e74c3c !important',
-        border: '1px solid #e74c3c !important',
+        color: '#65684b !important',
+        border: '1px solid #65684b !important',
         hover: {
-            background: '#ffeeed !important',
-            color: '#e74c3c !important',
+            background: '#ffffff !important',
+            color: '#65684b !important',
             transform: 'translateY(-1px) !important'
         }
     },
     
     adjust: {
-        background: '#f8f9fa !important',
-        color: '#333333 !important',
+        background: '#ffffff !important',
+        color: '#65684b !important',
         border: '1px solid #e0e0e0 !important',
         hover: {
-            background: '#f0f2f5 !important',
-            color: '#333333 !important',
+            background: '#ffffff !important',
+            color: '#65684b !important',
             transform: 'translateY(-1px) !important'
         }
     },
