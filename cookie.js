@@ -187,7 +187,7 @@ const config = {
     // Floating button styling
     floatingButtonStyle: {
         size: '50px',
-        background: '#2ecc71',
+        background: '#65684b',
         iconColor: '#ffffff',
         border: '2px solid #ffffff',
         borderRadius: '50%',
@@ -1942,7 +1942,11 @@ function injectConsentHTML(detectedCookies, language = 'en') {
             </div>
             <div class="cookie-consent-buttons">
                 <button id="acceptAllBtn" class="cookie-btn accept-btn">${lang.accept}</button>
-                <button id="adjustConsentBtn" class="cookie-btn adjust-btn">${lang.customize}</button>
+               <button id="adjustConsentBtn" class="cookie-btn adjust-btn"
+  style="background-color: #ffffff; color: #65684b; border: 1px solid #e0e0e0;">
+  ${lang.customize}
+</button>
+
                 <button id="rejectAllBtn" class="cookie-btn reject-btn">${lang.reject}</button>
             </div>
         </div>
@@ -2093,22 +2097,19 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         letter-spacing: 0.2px;
     }
 
-.cookie-banner .adjust-btn,
-.cookie-banner button.adjust-btn {
-    background-color: #ffffff !important;
-    color: #65684b !important;
-    border: 1px solid #e0e0e0 !important;
-    font-size: initial !important;
-    font-weight: normal !important;
-    box-shadow: none !important;
-    transition: all 0.3s ease;
-}
+    .adjust-btn {
+        background-color: ${config.buttonStyle.adjust.background};
+        color: ${config.buttonStyle.adjust.color};
+        border: ${config.buttonStyle.adjust.border};
+    }
 
-.cookie-banner .adjust-btn:hover {
-    background-color: #ffffff !important;
-    color: #65684b !important;
-    transform: translateY(-1px) !important;
-}
+    .adjust-btn:hover {
+        background-color: ${config.buttonStyle.adjust.hover.background};
+        color: ${config.buttonStyle.adjust.hover.color};
+        transform: ${config.buttonStyle.adjust.hover.transform};
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
 
 
     .reject-btn {
