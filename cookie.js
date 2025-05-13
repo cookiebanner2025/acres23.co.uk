@@ -2093,18 +2093,23 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         letter-spacing: 0.2px;
     }
 
-    .adjust-btn {
-        background-color: ${config.buttonStyle.adjust.background};
-        color: ${config.buttonStyle.adjust.color};
-        border: ${config.buttonStyle.adjust.border};
-    }
+.cookie-banner .adjust-btn,
+.cookie-banner button.adjust-btn {
+    background-color: #ffffff !important;
+    color: #65684b !important;
+    border: 1px solid #e0e0e0 !important;
+    font-size: initial !important;
+    font-weight: normal !important;
+    box-shadow: none !important;
+    transition: all 0.3s ease;
+}
 
-    .adjust-btn:hover {
-        background-color: ${config.buttonStyle.adjust.hover.background};
-        color: ${config.buttonStyle.adjust.hover.color};
-        transform: ${config.buttonStyle.adjust.hover.transform};
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    }
+.cookie-banner .adjust-btn:hover {
+    background-color: #ffffff !important;
+    color: #65684b !important;
+    transform: translateY(-1px) !important;
+}
+
 
     .reject-btn {
         background-color: ${config.buttonStyle.reject.background};
