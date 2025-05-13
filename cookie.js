@@ -1943,7 +1943,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
             <div class="cookie-consent-buttons">
                 <button id="acceptAllBtn" class="cookie-btn accept-btn">${lang.accept}</button>
                <button id="adjustConsentBtn" class="cookie-btn adjust-btn"
-  style="background-color: #ffffff; color: #65684b; border: 1px solid #e0e0e0;">
+  style="background-color: #ffffff; color: #65684b; border: 1px solid #000000;">
   ${lang.customize}
 </button>
 
