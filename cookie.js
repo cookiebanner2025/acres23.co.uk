@@ -133,7 +133,7 @@ const config = {
         color: '#ffffff !important',
         border: '1px solid #65684b !important',
         hover: {
-            background: '#000000 !important',
+            background: '#2c1c03 !important',
             color: '#ffffff !important',
             transform: 'translateY(-1px) !important'
         }
@@ -193,7 +193,7 @@ const config = {
         borderRadius: '50%',
         boxShadow: '0 6px 20px rgba(0, 0, 0, 0.2)',
         hover: {
-            background: '#000000',
+            background: '#2c1c03',
             transform: 'translateY(-3px) scale(1.05)',
             boxShadow: '0 8px 25px rgba(0, 0, 0, 0.3)'
         }
