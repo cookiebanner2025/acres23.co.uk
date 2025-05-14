@@ -129,11 +129,11 @@ const config = {
     transition: 'all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important',
     
     accept: {
-        background: '#65684b !important',
+        background: '#3e352e !important',
         color: '#ffffff !important',
         border: '1px solid #65684b !important',
         hover: {
-            background: '#2c1c03 !important',
+            background: '#65684b !important',
             color: '#ffffff !important',
             transform: 'translateY(-1px) !important'
         }
