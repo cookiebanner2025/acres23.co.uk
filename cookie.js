@@ -187,13 +187,13 @@ const config = {
     // Floating button styling
     floatingButtonStyle: {
         size: '50px',
-        background: '#65684b',
+        background: '#2c1c03',
         iconColor: '#ffffff',
         border: '2px solid #ffffff',
         borderRadius: '50%',
         boxShadow: '0 6px 20px rgba(0, 0, 0, 0.2)',
         hover: {
-            background: '#2c1c03',
+            background: '#65684b',
             transform: 'translateY(-3px) scale(1.05)',
             boxShadow: '0 8px 25px rgba(0, 0, 0, 0.3)'
         }
