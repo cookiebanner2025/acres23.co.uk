@@ -3,7 +3,7 @@ const config = {
     allowedDomains: ['acres23.co.uk'],
     
     // Privacy policy URL (configurable)
-    privacyPolicyUrl: 'https://acres23.co.uk/#privacy-policy', // Add your full privacy policy URL here
+    privacyPolicyUrl: 'https://acres23.co.uk/cookie-policy/', // Add your full privacy policy URL here
     
     // Microsoft UET Configuration
     uetConfig: {
